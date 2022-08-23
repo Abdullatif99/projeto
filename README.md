@@ -1,1 +1,49 @@
 # projeto
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesema.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    
+        <div class="indicador">
+            <div class="circulo" id="vermelho">  </div> <!--vermelho-->
+            <div class="circulo" id="amarelo">  </div> <!--amarelo-->
+            <div class="circulo" id="verde">  </div> <!--verde-->
+        </div>
+    
+    </div>
+    <script>
+        var vermelho = document.getElementById("vermelho")
+        var amarelo = document.getElementById ("amarelo")
+        var verde = document.getElementById ("verde")
+
+        vermelho.style.backgroundColor="red"
+        
+        setTimeout(function(){
+            vermelho.style.backgroundColor= null
+            amarelo.style.backgroundColor= "yellow"
+            verde.style.backgroundColor= null
+        },5000)
+
+        setTimeout(function(){
+            vermelho.style.backgroundColor= null
+            amarelo.style.backgroundColor= null
+            verde.style.backgroundColor= "green"
+        },10000)
+
+
+
+
+
+    </script>
+
+    
+
+</body>
+</html>
